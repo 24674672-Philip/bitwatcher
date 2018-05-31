@@ -2,18 +2,40 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage"
-    android:id="@+id/sign_in_view">
+    tools:context=".HomePage">
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <Button
+        android:id="@+id/crypto_result_view_button"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Crypto Result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
+
+    <Button
+        android:id="@+id/location_service_button"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Location-based Services"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crypto_result_view_button" />
 
 </android.support.constraint.ConstraintLayout>

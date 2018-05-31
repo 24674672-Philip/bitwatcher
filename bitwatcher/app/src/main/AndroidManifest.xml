@@ -19,7 +19,10 @@
         <activity
             android:name=".CryptoResultView"
             android:label="@string/title_activity_crypto_result_view"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".LBSpage">
+    </activity>
     </application>
 
 </manifest>
