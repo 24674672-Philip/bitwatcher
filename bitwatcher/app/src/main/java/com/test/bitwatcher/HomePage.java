@@ -19,15 +19,16 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseAuth mAuth;
     private GoogleSignInClient mGoogleSignInClient;
-    private int RC_SIGN_IN = 0;
+    private int RC_SIGN_IN = 9000;
     private String TAG = "Homepage";
+    private SignInButton signInButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        SignInButton signInButton = findViewById(R.id.sign_in_button);
+        signInButton = findViewById(R.id.sign_in_button);
         signInButton.setSize(SignInButton.SIZE_STANDARD);
         findViewById(R.id.sign_in_button).setOnClickListener(this);
 
@@ -56,6 +57,20 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener{
     }
 
     private void updateUI(GoogleSignInAccount account) {
+        try {
+            if (account!=null){
+                signInButton.setEnabled(false);
+                Intent cryptoIntent = new Intent(this, CryptoResultView.class);
+                startActivity(cryptoIntent);
+            }
+            else{
+                signInButton.setEnabled(true);
+            }
+
+        }
+        catch(Exception dex){
+            signInButton.setEnabled(true);
+        }
     }
 
     @Override
