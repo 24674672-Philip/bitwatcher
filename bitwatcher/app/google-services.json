@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "889864323814",
+    "firebase_url": "https://bitwatcher-1d576.firebaseio.com",
+    "project_id": "bitwatcher-1d576",
+    "storage_bucket": "bitwatcher-1d576.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889864323814:android:2d2337ff171eaa78",
+        "android_client_info": {
+          "package_name": "com.test.bitwatcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889864323814-5qvurh2n435e6r7i56cblq9psfgvrhqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.test.bitwatcher",
+            "certificate_hash": "5bf863c4d12c7acb34a746e34e9fb6be01655e02"
+          }
+        },
+        {
+          "client_id": "889864323814-djdqmnc69aankchkj22cl15pr2p77sc2.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "889864323814-djdqmnc69aankchkj22cl15pr2p77sc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiwi-QQJGIV71tA3jgwWMDAFzqzz4sV2U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889864323814-djdqmnc69aankchkj22cl15pr2p77sc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
