@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class CryptoResultView extends AppCompatActivity {
+public class CryptoResultView extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,4 +25,10 @@ public class CryptoResultView extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onClick(View v){
+
+    }
+
 }
